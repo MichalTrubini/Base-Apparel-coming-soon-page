@@ -15,20 +15,28 @@ function validateEmail() {
 function errorMessage(){
 
     let emailError = document.querySelector('.email-error');
+    let errorIcon = document.querySelector('.error-icon');
 
     emailError.classList.add('error-message-visible');
+    email.classList.add('input-error-outline');
+    errorIcon.classList.add('error-icon-visible');
 }
 
 function checkIfCorrected(){
     let email = document.getElementById('email');
     let emailError = document.querySelector('.email-error');
     let emailErrorVisible = document.querySelector('.error-message-visible');
+    let errorIcon = document.querySelector('.error-icon');
 
     if (email.validity.valid && emailErrorVisible) {
         emailError.classList.remove('error-message-visible');
+        email.classList.remove('input-error-outline');
+        errorIcon.classList.remove('error-icon-visible');
     }
     if (email.value === '' && emailErrorVisible) {
         emailError.classList.remove('error-message-visible');
+        email.classList.remove('input-error-outline');
+        errorIcon.classList.remove('error-icon-visible');
     }
 }
 

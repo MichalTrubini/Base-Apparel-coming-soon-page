@@ -20,7 +20,7 @@
   </header>
   <main class="main">
     <picture class="image">
-      <source srcset="images/hero-desktop.jpg" media="(min-width: 800px)" />
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 1440px)" />
       <img src="images/hero-mobile.jpg" />
     </picture>
     <section class="content">
@@ -35,16 +35,16 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
       <div class="content__form-submit">
-        <form novalidate class="content__searchbox">
+        <form class="content__searchbox">
           <input type="email" 
                  placeholder="Email Address" 
                  id="email"
                  pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
                  required>
-          <button type="button" id="submit-button">
-            <img src="images/icon-arrow.svg" alt="arrow" ></i>
+          <button id="submit-button">
+            <img src="images/icon-arrow.svg" alt="arrow" >
           </button>
-          <img src="images/icon-error.svg" alt="error icon" id="error-icon">
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
         </form>
         <p class="email-error" aria-live="polite">Please provide a valid email</p>
       </div>
