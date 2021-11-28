@@ -1,11 +1,10 @@
 @import 'normalize','settings','variables';
 
 body {
-    background:url(../images/bg-pattern-desktop.svg);
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
     font-family: 'Josefin Sans', sans-serif;
-    font-size:1.5rem;
+    font-size:1.6rem;
     text-align: center;
-
 }
 
 .container {
@@ -19,6 +18,7 @@ body {
 
 .header-mobile {
     text-align: left;
+    padding:3.2rem;
 }
 
 .header-desktop {
@@ -27,64 +27,74 @@ body {
 
 .site-logo {
     width:100px;
-    margin:1rem 0 2rem 3rem;
 }
 
 .content {
-    max-width:37rem;
+    max-width:37.5rem;
+    padding:6.4rem 3.2rem 9.2rem;
 
     &__heading {
         font-size:4rem;
         font-weight: 600;
+        line-height: 4.2rem;
         text-transform:uppercase;
         color:$color-heading-dark;
-        letter-spacing:1.3rem;
-        margin:4rem 0 2rem 0;
+        letter-spacing:10.83px;
+        margin-bottom:1.6rem;
     }
 
     &__heading--soft {
         color:$color-heading-light;
-        font-weight:200;
+        font-weight:300;
     }
 
-    &__text {
+    &__paragraph {
         color:$color-text-main;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
         font-weight:400;
-        padding:0 2rem;
+        font-size: 1.4rem;
+        margin-bottom:3.2rem;
     }
 
     &__form-submit {
         margin:auto;
         position: relative;
-        width:31.2rem;
     }
 }
 
 input {
-    border:1px solid $color-text-main;
-    border-radius:3rem;
-    margin-top:3.5rem;
-    outline:none;
-    padding:1.5rem 3rem;
-    width:23rem;
+    background:transparent;
+    outline:1px solid #CE9898;
+    border-radius:2.8rem;
+    border:none;
+    padding:1.1rem 2.4rem 0.9rem;
+    width:100%;
+    line-height: 2.8rem;
+    font-size: 1.4rem;
+    color:#423A3A;
+}
+
+input:focus {
+    background:transparent;
 }
 
 input::placeholder {
     color:$color-text-main;
-    font-size:1.5rem;
-    font-weight: 200;
+    font-size:1.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
 }
 
 #submit-button {
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
     border:none;
-    width:8rem;
-    height:4.9rem;
-    border-radius: 3rem;
+    width:6.4rem;
+    height:4.8rem;
     position:absolute;
-    top:42%;
-    left:72%;
+    top:0;
+    right:-2px;
 }
 
 .submit-button-activated {
@@ -94,19 +104,20 @@ input::placeholder {
 
 #email-error {
     display: inline-block;
-    width: 23rem;
-    margin-top: 1.5rem;
-    position: absolute;
-    left:1.5rem;
+    width: 100%;
+    margin-top: 0.8rem;
+    text-align: left;
+    padding-left: 2.4rem;
     color:$background-body;
-    font-size:1.4rem;
+    font-size:1.3rem;
+    line-height: 1.3rem;
 }
 
 #error-icon {
     display:none;
     position:absolute;
-    right: 96px;
-    top: 46px;
+    right: 74px;
+    top: 12px;
 }
 
 .error-icon-visible {
@@ -117,10 +128,6 @@ input::placeholder {
     margin-top:2px;
     margin-left:5px;
 }
-
-.attribution { font-size: 11px; text-align: center; margin-top:7rem; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 
 @media screen and (min-width:800px) {
     body {

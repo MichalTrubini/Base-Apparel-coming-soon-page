@@ -30,13 +30,17 @@
       <h1 class="content__heading">
         <span class="content__heading--soft">We're</span> coming soon
       </h1>
-      <p class="content__text">
+      <p class="content__paragraph">
         Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
       <div class="content__form-submit">
         <form novalidate action="" class="content__searchbox">
-          <input type="email" placeholder="Email Address" id="mail">
+          <input type="email" 
+                 placeholder="Email Address" 
+                 id="mail"
+                 pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+                 required>
           <button type="submit" id="submit-button">
             <img src="images/icon-arrow.svg" alt="arrow" ></i>
           </button>
