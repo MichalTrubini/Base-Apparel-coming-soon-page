@@ -35,18 +35,18 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
       <div class="content__form-submit">
-        <form novalidate action="" class="content__searchbox">
+        <form novalidate class="content__searchbox">
           <input type="email" 
                  placeholder="Email Address" 
-                 id="mail"
+                 id="email"
                  pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
                  required>
-          <button type="submit" id="submit-button">
+          <button type="button" id="submit-button">
             <img src="images/icon-arrow.svg" alt="arrow" ></i>
           </button>
           <img src="images/icon-error.svg" alt="error icon" id="error-icon">
         </form>
-        <p id="email-error" aria-live="polite"></p>
+        <p class="email-error" aria-live="polite">Please provide a valid email</p>
       </div>
     </section>
   </main>

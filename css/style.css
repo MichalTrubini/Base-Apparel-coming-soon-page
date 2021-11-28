@@ -296,8 +296,8 @@ input::placeholder {
           box-shadow: 0 10px 13px -4px #ee8c8c;
 }
 
-#email-error {
-  display: inline-block;
+.email-error {
+  display: none;
   width: 100%;
   margin-top: 0.8rem;
   text-align: left;
@@ -381,5 +381,9 @@ input::placeholder {
   .content__form-submit {
     margin: 0;
   }
+}
+
+.error-message-visible {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
